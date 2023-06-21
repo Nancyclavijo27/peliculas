@@ -8,7 +8,7 @@
     height: 180px;
     background-color: rgba(51, 51, 51, 0.9);
     color: #fff;
-    background-image: url('https://media.ambito.com/p/0808426bc941b9946517bd19cd623b3e/adjuntos/239/imagenes/038/678/0038678486/suenos-libertadjpg.jpg');
+    background-image: url('https://www.futuro.cl/wp-content/uploads/2020/03/cine.png');
     background-size: cover;
     background-position: center;
     width: 100%; /* Ajustar ancho al 100% */
@@ -34,7 +34,7 @@
       padding: 0.5rem 1rem;
       border-radius: 4px;
       border: none;
-      background-color: #d1581b; /* Nuevo color de fondo */
+      background-color: red; /* Nuevo color de fondo */
       color: #fff;
       cursor: pointer;
     }

@@ -1,10 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Landing.css";
 
 export default function Landing() {
   return (
-    <div>
-      <h1>Landing</h1>
+    <div className="landing">
+      <h1 className="title">Cartelera Digital   </h1>
+      <Link to="/home">
+        <button className="btn">Iniciar</button>
+      </Link>
     </div>
-  )
+  );
 }
