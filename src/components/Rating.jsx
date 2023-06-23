@@ -8,14 +8,14 @@ const Rating = ({ ratingOrigin, changeRating }) => {
     setRating(value);
     changeRating(value*2)
   };
-  const addRatingOrigin = function () {
+  const addRatingOrigin = function () {//la funcion que pasamaos al useEffect
     // console.log(ratingOrigin)
-    let result = Math.floor(ratingOrigin/2)
+    let result = Math.floor(ratingOrigin/2)//redondea y divide por dos por que lo quiero hasta el 5
     // console.log(result)
     setRating(result)
   };
 
-  useEffect(() => {
+  useEffect(() => {//como no tiene valores y comienza en cero esto hace que cuando se levante se carge y listo
     addRatingOrigin();
   }, []);
 

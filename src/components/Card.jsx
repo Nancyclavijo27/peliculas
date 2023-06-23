@@ -6,12 +6,12 @@ import Rating from "./Rating";
 export default function Card({ movie }) {
   // console.log(movie)
 
-  const [rating,setRating] = useState(movie.vote_average)
+  const [rating,setRating] = useState(movie.vote_average)//este es el estado para el tema del reitin el vote_average trae el numero
 
-  function changeRating(newRating){
+  function changeRating(newRating){//esta es la funcion que nos ayuda a cambiar el numero ya que no tenemos redux  ni ninfuna libreria para hacer esto
     setRating(newRating)
   }
-
+   //al final rating es un numero y changeRating es la funcion que se pasa por parametros a reiting 
   return (
     <div className="card">
       <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="card-img" />
